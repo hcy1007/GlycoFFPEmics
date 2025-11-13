@@ -1,0 +1,13 @@
+/* custom_sidebar.css */
+.main-sidebar {
+  width: 320px !important;
+}
+.main-header .logo {
+  width: 320px !important;
+}
+.main-header .navbar {
+  margin-left: 300px !important;
+}
+.content-wrapper, .right-side, .main-footer {
+  margin-left: 300px !important;
+} 

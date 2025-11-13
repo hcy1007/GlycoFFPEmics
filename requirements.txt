@@ -1,0 +1,76 @@
+# Glyco FFPE omics 糖肽分析系统 - R包依赖列表
+# 版本: v2.0
+# 最后更新: 2024年
+
+# 核心Shiny框架
+shiny>=1.7.0
+shinydashboard>=0.7.0
+shinyjs>=2.1.0
+
+# 数据处理和操作
+dplyr>=1.1.0
+tidyr>=1.3.0
+purrr>=1.0.0
+stringr>=1.5.0
+
+# 数据可视化
+ggplot2>=3.4.0
+ggcorrplot>=0.1.4
+ggfortify>=0.4.15
+ggalluvial>=0.12.5
+ggvenn>=0.1.10
+ggVennDiagram>=1.2.4
+ggrepel>=0.9.3
+ggpubr>=0.6.0
+patchwork>=1.1.2
+
+# 数据表格和交互
+DT>=0.28
+plotly>=4.10.0
+htmlwidgets>=1.6.0
+
+# 热图和相关性分析
+pheatmap>=1.0.12
+corrplot>=0.92
+
+# 缺失值处理
+VIM>=6.2.2
+impute>=1.74.0
+
+# 机器学习和分析
+factoextra>=1.0.7
+MASS>=7.3.58
+e1071>=1.7.13
+
+# 生物信息学分析
+clusterProfiler>=4.8.0
+org.Hs.eg.db>=3.17.0
+
+# ROC分析和模型评估
+pROC>=1.18.0
+caret>=6.0.94
+
+# 系统要求
+# R版本: >= 4.2.0
+# 操作系统: Windows 10/11, macOS 10.14+, Linux (Ubuntu 18.04+)
+# 内存: 建议8GB以上
+# 存储空间: 至少2GB可用空间
+# 网络: 需要稳定的网络连接（用于富集分析）
+
+# 安装说明
+# 1. 确保R版本 >= 4.2.0
+# 2. 运行 install_dependencies.R 脚本自动安装所有依赖
+# 3. 如果某些包安装失败，请检查网络连接和R版本
+# 4. Bioconductor包需要先安装BiocManager
+
+# 可选包（用于增强功能）
+# RColorBrewer>=1.1.3
+# scales>=1.2.1
+# gridExtra>=2.3
+# knitr>=1.43
+# rmarkdown>=2.23
+
+# 开发工具（可选）
+# devtools>=2.4.5
+# roxygen2>=7.2.3
+# testthat>=3.1.0 
