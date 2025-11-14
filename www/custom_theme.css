@@ -1,0 +1,118 @@
+/* Light biomolecular theme (teal/seafoam/ice) */
+
+/* Main content background with logo */
+.content-wrapper, .right-side, .main-footer {
+  background-color: #F6FBFD !important; /* very light ice blue */
+  background-image: url('assets/logo.jpg') !important;
+  background-size: 80% !important; /* 80% size to balance visibility and readability */
+  background-position: 100% center !important; /* move further right */
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  position: relative !important;
+  min-height: 100vh !important;
+}
+
+/* Add overlay for text readability - lighter overlay for better logo visibility */
+.content-wrapper::after, .right-side::after, .main-footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(246, 251, 253, 0.6) !important; /* lighter overlay for better logo visibility */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.content-wrapper > *, .right-side > *, .main-footer > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Special styling for the welcome area to show logo clearly */
+.welcome-title {
+  color: #2F4858 !important;
+  text-shadow: 2px 2px 4px rgba(255,255,255,0.8) !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  background-clip: unset !important;
+}
+
+/* Sidebar background and text */
+.main-sidebar {
+  background-color: #E9F7F5 !important; /* pale mint */
+  color: #2F4858 !important;           /* deep slate */
+  width: 340px !important;
+}
+
+/* Sidebar menu items */
+.sidebar-menu > li > a {
+  color: #2F4858 !important;
+  font-weight: 600;
+}
+.sidebar-menu > li.active > a, .sidebar-menu > li > a:hover {
+  background: #BFE7E2 !important;      /* soft seafoam highlight */
+  color: #103A40 !important;
+}
+
+/* Header colors */
+.main-header .logo {
+  background-color: #E9F7F5 !important; /* same as sidebar background */
+  color: #2F4858 !important;
+  border-bottom: 0;
+  height: 50px !important;          /* keep height reasonable to not block HOME */
+  line-height: 50px !important;
+  padding: 4px 8px !important;      /* minimal padding */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+.main-header .navbar {
+  background-color: #DAF4F6 !important; /* header bar softer */
+  margin-left: 340px !important;
+  min-height: 50px !important;      /* match logo area height */
+}
+
+/* Box (card) titles */
+.box.box-solid > .box-header {
+  background: #E3F6F4 !important;
+  color: #1F3B4D !important;
+  border-bottom: 2px solid #B3E5E1 !important;
+}
+
+/* Box content background */
+.box {
+  background: #FFFFFF !important;
+  border-top: 2px solid #B3E5E1 !important;
+}
+
+/* Buttons */
+.btn, .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+  background-color: #3BA7A0 !important; /* professional teal */
+  color: #FFFFFF !important;
+  border: none !important;
+}
+.btn:hover, .btn:focus {
+  background-color: #2E8E88 !important;
+  color: #FFFFFF !important;
+}
+
+/* Tab panels */
+.nav-tabs-custom > .nav-tabs > li.active > a, 
+.nav-tabs-custom > .nav-tabs > li.active > a:focus, 
+.nav-tabs-custom > .nav-tabs > li.active > a:hover {
+  background-color: #E3F6F4 !important;
+  color: #134E4A !important;
+  border-top: 2px solid #B3E5E1 !important;
+}
+
+/* Links and subtle accents */
+a, .sidebar a { color: #247B78; }
+a:hover, .sidebar a:hover { color: #155E5A; }
+
+/* Removed molecular grid to avoid conflict with logo background */

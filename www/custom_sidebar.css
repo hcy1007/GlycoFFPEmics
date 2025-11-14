@@ -1,0 +1,12 @@
+.main-sidebar {
+  width: 340px !important;
+}
+.main-header .logo {
+  width: 340px !important;
+}
+.main-header .navbar {
+  margin-left: 340px !important;
+}
+.content-wrapper, .right-side, .main-footer {
+  margin-left: 340px !important;
+} 
